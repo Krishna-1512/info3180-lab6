@@ -47,7 +47,7 @@ const NewsList = {
     let self = this;
     fetch('https://newsapi.org/v2/top-headlines?country=us', {
       headers:{
-        'Authorization': 'Bearer 375eeeb7e39146f2b9e9f28dec581ee4' 
+        'Authorization': 'Bearer <place token her>'  
       }
     })
     .then(function(response){
@@ -69,7 +69,7 @@ const NewsList = {
     fetch('https://newsapi.org/v2/everything?q='+
    self.searchTerm + '&language=en', {
     headers: {
-    'Authorization': 'Bearer 375eeeb7e39146f2b9e9f28dec581ee4'
+    'Authorization': 'Bearer <place token her>' 
     }
    })
     .then(function(response) {
